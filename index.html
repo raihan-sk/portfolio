@@ -1,3 +1,273 @@
-<script>
-  window.location.href = "portfolio.html";
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Smooth scroll fix for navbar overlap -->
+    <style>
+        section {
+            scroll-margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 🔥 HOME SECTION -->
+<section id="home" class="banner">
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="nav-left">
+            <img src="images/raihan.jpg" class="nav-profile">
+            <h2>Raihan Sk</h2>
+        </div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievement">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero / About -->
+    <div class="about-container">
+
+        <div class="about-image">
+            <img src="images/raihan.jpg" alt="Raihan">
+        </div>
+
+        <div class="about-text">
+            <h1>Raihan Sk</h1>
+            <h3>3rd Year B.Tech (AI & ML)</h3>
+
+            <p>
+                I am an AI/ML enthusiast passionate about building intelligent, scalable, and real-world solutions. I enjoy solving complex problems using data structures, algorithms, and modern technologies.
+            </p>
+
+            <p>
+               Currently, I am focused on strengthening my skills in Machine Learning, Cloud Computing, and Software Development while working on practical projects.
+            </p>
+
+            <p>
+                I am always eager to learn, adapt, and contribute to innovative and impactful solutions.
+            </p>
+
+            <p>
+                Looking for internship opportunities to apply my skills and grow as a developer.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- 🔥 LOCATION SECTION -->
+<section id="location" class="location-section">
+    <h2 class="section-title">My Location</h2>
+
+    <div class="location-container">
+        <div class="location-info">
+            <h3>Bhagwangola, Murshidabad 🇮🇳</h3>
+
+            <p>
+                I am originally from Bhagwangola, Murshidabad, West Bengal. I began my academic journey at Dihipara High School, where I studied up to Class 7. I then completed my secondary education at Bansewarpur Vidyapith in South 24 Parganas, followed by my Higher Secondary education at Chandipur High School in Bhangar.
+            </p>
+
+            <p>
+                Currently, I am based in Kolkata, where I am pursuing my B.Tech in Artificial Intelligence and Machine Learning from Techno International Newtown. I am open to internship and remote opportunities across India.
+            </p>
+
+            <div class="location-details">
+                <p><strong>Hometown:</strong> Bhagwangola, Murshidabad</p>
+                <p><strong>Current City:</strong> Kolkata</p>
+                <p><strong>State:</strong> West Bengal</p>
+                <p><strong>Country:</strong> India</p>
+            </div>
+        </div>
+
+        <div class="location-map">
+            <iframe 
+                src="https://www.google.com/maps?q=Charlaban+Gola+Bhagwangola+Murshidabad&output=embed"
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<section id="education" class="education-section">
+    <h2 class="section-title">My Education</h2>
+
+    <div class="timeline">
+
+        <!-- B.Tech -->
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>B.Tech (AI & ML)</h3>
+                <span>2023 – 2027 | Techno International Newtown</span>
+                <p>Currently pursuing Bachelor of Technology in Artificial Intelligence and Machine Learning.</p>
+            </div>
+        </div>
+
+        <!-- Higher Secondary -->
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>Higher Secondary (12th)</h3>
+                <span>2023 | Chandipur High School, Bhangar</span>
+                <p>Completed Higher Secondary education in Science stream.</p>
+            </div>
+        </div>
+
+        <!-- Secondary -->
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>Secondary (10th)</h3>
+                <span>2021 | Bansewarpur Vidyapith, South 24 Parganas</span>
+                <p>Completed secondary education with strong academic foundation.</p>
+            </div>
+        </div>
+
+        <!-- Primary -->
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>Primary Education</h3>
+                <span>Up to 2017 | Dihipara High School</span>
+                <p>Studied up to Class 7 and built my early academic foundation.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="projects" class="projects-section">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="projects-container">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>Doctalk Chatbot</h3>
+            <p>
+                 Built an AI-powered healthcare chatbot capable of providing basic medical
+                 assistance and answering user queries. Implemented natural language processing
+                 techniques for better interaction and designed a responsive interface for
+                 seamless user experience.
+            </p>
+            <div class="project-links">
+                 <a href="#" target="_blank">GitHub</a>
+                 <a href="#" target="_blank">Live Demo</a>
+            </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>
+                Designed and developed a personal portfolio website using HTML, CSS,
+                and modern UI design principles.
+            </p>
+            <div class="project-links">
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Live Demo</a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <h3>Machine Learning Model</h3>
+            <p>
+                Built a machine learning model for prediction tasks using Python,
+                NumPy, and scikit-learn.
+            </p>
+            <div class="project-links">
+                <a href="#" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="achievement" class="achievement-section">
+    <h2 class="section-title">My Achievements</h2>
+
+    <div class="achievement-container">
+
+        <!-- Deloitte -->
+        <div class="achievement-card">
+            <h3>🏆 Deloitte Technology Job Simulation</h3>
+            <p>
+                Completed Deloitte Australia's Technology Job Simulation on Forage.
+                Gained experience in development, coding, and dashboard proposal creation.
+            </p>
+        </div>
+
+        <!-- Tata -->
+        <div class="achievement-card">
+            <h3>📊 Tata GenAI Data Analytics Simulation</h3>
+            <p>
+                Completed GenAI-powered Data Analytics simulation by Tata via Forage.
+                Worked on data analysis, AI-based prediction, and business insights.
+            </p>
+        </div>
+
+        <!-- Hackathon -->
+        <div class="achievement-card">
+            <h3>🚀 Hackathon Participation</h3>
+            <p>
+                Participated in 2 hackathons, gaining hands-on experience in problem-solving,
+                teamwork, and real-world project development.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="contact" class="contact-section">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-container">
+
+        <!-- Left: Info -->
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>Feel free to reach out for internships, collaborations, or any opportunities.</p>
+
+            <p><strong>Email:</strong> rsk839193@gmail.com</p>
+            <p><strong>Phone:</strong> +919641342606</p>
+            <p><strong>Location:</strong> Kolkata, India</p>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/raihansk" target="_blank">
+                 🔗 LinkedIn Profile
+                 </a>
+                <a href="https://github.com/raihan-sk" target="_blank">
+                 💻 GitHub Profile
+                </a>
+            </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
