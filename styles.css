@@ -611,4 +611,5 @@ section::before {
 
 body {
     overflow-x: hidden;
+    padding-top: 80px;   /* equal to navbar height */
 }
