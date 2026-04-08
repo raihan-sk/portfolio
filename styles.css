@@ -148,10 +148,17 @@ section::before {
     flex-wrap: wrap;
 }
 
-.about-image img{
-    width: 280px;
+.about-image {
+    display: flex;
+    justify-content: center;
+} 
+.about-image img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;            /* ✅ maintain aspect ratio */
     border-radius: 50%;
     border: 4px solid #00bfa5;
+    object-fit: cover;       /* keeps image clean */
 }
 
 .about-text{
@@ -174,6 +181,19 @@ section::before {
     line-height: 1.6;
 }
 
+.about-image img {
+    transition: 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .about-image img {
+        max-width: 200px;   /* smaller on mobile */
+    }
+}
 /* ================= LOCATION ================= */
 
 .location-section {
